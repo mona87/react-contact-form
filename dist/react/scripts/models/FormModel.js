@@ -20,10 +20,10 @@ module.exports = Backbone.Model.extend({
 			return 'Please enter a valid email address'
 		}
 		else if(!model.website){
-			return 'Please enter a website.'
+			return 'Please enter a website'
 		}
 		else if(!validator.isURL(model.website)){
-			return 'Website must start with http://'
+			return 'Please enter a valid website'
 		}
 		else if(!model.message){
 			return 'Please enter a message.'
